@@ -3,12 +3,12 @@
 using namespace std;
 
 int reverse(int arr[], int n) {
-    int s = 0;
-    int e = n-1;
-    while(s<=e) {
-        swap(arr[s],arr[e]);
-        s++;
-        e--;
+    int i = 0;
+    
+    while(i<n/2) {
+        swap(arr[i],arr[n-1-i]);
+        i++;
+      
     }
 }
 
